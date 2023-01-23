@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLoginPage"
+    android:background="@drawable/doodle3">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="false"
+        android:addStatesFromChildren="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".StudentLoginPage">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="149dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="68dp"
+            android:clickable="false"
+            android:padding="20px"
+            android:text="Forgot Password?"
+            android:textColor="#6200EE"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Button1"
+            app:layout_constraintTop_toBottomOf="@+id/Password1"
+            tools:ignore="UnknownIdInLayout" />
+
+        <EditText
+            android:id="@+id/Username2"
+            android:layout_width="259dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginBottom="43dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/Password2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/Button2"
+            android:layout_width="111dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="70dp"
+            android:text="Login"
+            app:cornerRadius="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Password2"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/Password2"
+            android:layout_width="263dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginBottom="47dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:password="false"
+            app:layout_constraintBottom_toTopOf="@+id/Button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Username2"
+            tools:ignore="Deprecated,TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="42dp"
+            app:layout_constraintBottom_toTopOf="@+id/Username2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/admin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
